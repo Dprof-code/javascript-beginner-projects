@@ -1,0 +1,294 @@
+:root {
+  --mainFont: "Ubuntu", sans-serif;
+  --white: #ffffff;
+  --primary: #a66cff;
+  --secondary: #9c9efe;
+  --lightPurple: #afb4ff;
+  --lightBlue: #b1e1ff;
+  --grey: #757575;
+  --dark: #212121;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    var(--lightPurple) 0%,
+    var(--secondary) 100%
+  );
+  background-size: cover;
+  font-family: var(--mainFont);
+  box-sizing: inherit;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  padding: 3rem;
+  word-wrap: break-word;
+}
+
+h1 {
+  text-align: center;
+}
+
+#header-title {
+  font-weight: 700;
+  font-size: 5rem;
+  animation: headerAnime 3s ease-in infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes headerAnime {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+
+main {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.task-box-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  width: 100%;
+  gap: 3rem;
+}
+
+.task-box {
+  width: 250px;
+  border: 1px solid var(--lightBlue);
+  background-color: var(--primary);
+  color: var(--white);
+  border-radius: 8px;
+  text-align: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.not-clickable {
+  pointer-events: none;
+}
+
+.task-box:nth-of-type(even) {
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+.task-box:hover {
+  box-shadow: 5px 10px 20px 5px var(--grey);
+  transform: scale(1.2);
+}
+
+#overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+#close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  font-size: 4rem;
+  text-align: right;
+  cursor: pointer;
+  z-index: 3;
+}
+
+#task-container {
+  background-color: var(--white);
+  position: absolute;
+  max-width: 1000px;
+  width: 100%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slideDown 2s ease-in;
+  display: none;
+}
+
+@keyframes slideDown {
+  0% {
+    /**transform: translate(50%, -100%);**/
+    opacity: 0.1;
+  }
+
+  100% {
+    /**transform: translate(50%, 50%);**/
+    opacity: 1;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-top: 1.5rem;
+}
+
+input {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+a {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: var(--white);
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+/** Even/Odd Number Checker Start **/
+
+#even-odd-checker {
+  text-align: center;
+}
+
+#number-input {
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+/** Even/Odd Number Checker End **/
+
+/** Prime Checker Start **/
+
+#prime-number-checker {
+  text-align: center;
+}
+
+/** Prime Number Checker End **/
+
+/** Palindrome Checker Start **/
+
+/** Palindrome Checker End **/
+
+/** Vowel/Consonant count Start **/
+
+#vowel-consonant-count-checker {
+  text-align: center;
+}
+
+#word-input {
+  padding: 1rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+/** Vowel/Consonant count End **/
+
+/** Quadratic Calculator Start **/
+
+#quadratic-calc-input {
+  padding: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+/** Quadratic Calculator End **/
+
+footer {
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/** Background Color Changer Start **/
+
+/** Background Color Changer End **/
+
+/** Media Queries **/
+
+@media (max-width: 720px) {
+  header {
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: block;
+  }
+
+  #close-btn {
+    z-index: 6;
+  }
+
+  main {
+    display: inline-block;
+  }
+
+  .task-box-container {
+    display: block;
+  }
+
+  .task-box {
+    margin: 2rem auto;
+  }
+
+  #task {
+    width: 100%;
+    height: 90%;
+    top: 5rem;
+  }
+
+  #task-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+}

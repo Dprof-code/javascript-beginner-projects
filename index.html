@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300:0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+
+  <body id="body">
+    <header>
+      <h1 id="header-title">Day-1 [30DaysOfCode]</h1>
+    </header>
+
+    <main>
+      <section class="task-box-container">
+        <div id="even-odd-checker-btn" class="task-box">
+          <h2>Even/Odd Number Checker</h2>
+        </div>
+
+        <div id="prime-number-checker-btn" class="task-box">
+          <h2>Prime Number Checker</h2>
+        </div>
+
+        <div id="palindrome-checker-btn" class="task-box">
+          <h2>Palindrome Checker</h2>
+        </div>
+
+        <div id="vowel-consonant-count-checker-btn" class="task-box">
+          <h2>Vowel and Consonant Letter count</h2>
+        </div>
+
+        <div id="quadratic-calc-btn" class="task-box">
+          <h2>Quadratic Equation Calculator</h2>
+        </div>
+
+        <div id="background-color-changer-btn" class="task-box">
+          <h2>Background Color Changer</h2>
+        </div>
+      </section>
+
+      <div id="overlay" class="hide">
+        <!--<div id="close-btn">&times;</div>-->
+      </div>
+
+      <div id="task-container">
+        <div id="close-btn">&times;</div>
+        <!-- Even/Odd Number Checker Start -->
+        <div id="even-odd-checker" class="hide">
+          <h2>Even/Odd Number Checker</h2>
+          <h3>Enter a number</h3>
+          <input
+            id="number-input even-odd-number-check"
+            type="text"
+            placeholder="Enter a number"
+          />
+          <h3 id="even-odd-checker-output"></h3>
+        </div>
+        <!-- Even/Odd Number Checker End -->
+
+        <!--Prime Number Checker Start -->
+
+        <div id="prime-number-checker" class="hide">
+          <h2>Prime Number Checker</h2>
+          <h3>Enter a number</h3>
+          <input
+            id="number-input prime-number-check"
+            type="text"
+            placeholder="Enter a number"
+          />
+          <h3 id="prime-number-checker-output"></h3>
+        </div>
+
+        <!--Prime Number Checker End -->
+
+        <!--Palindrome Checker Start -->
+
+        <div id="palindrome-checker" class="hide">
+          <h2>Palindrome Checker</h2>
+          <h3>Enter a word</h3>
+          <input
+            id="word-input palindrome-check"
+            type="text"
+            placeholder="Enter a text"
+          />
+          <h3 id="palindrome-checker-output"></h3>
+        </div>
+
+        <!--Palindrome Checker End -->
+
+        <!--Vowel/Consonant count Start -->
+
+        <div id="vowel-consonant-count-checker" class="hide">
+          <h2>Vowel/Consonant Letters Count Checker</h2>
+          <h3>Enter a text</h3>
+          <input
+            id="word-input vowel-consonant-count-check"
+            type="text"
+            placeholder="Enter a text"
+          />
+          <h3 id="vowel-consonant-count"></h3>
+        </div>
+
+        <!--Vowel/Consonant count End -->
+
+        <!--Quadratic Calculator Start -->
+
+        <div id="quadratic-calc" class="hide">
+          <h2>Quadratic Calculator</h2>
+          <h3>Enter a Quadratic Equation</h3>
+          <input
+            id="number-input quadratic-calc-input"
+            type="text"
+            placeholder="Enter a Quadratic Equation"
+          />
+          <h3 id="quadratic-calc-output">The root of the Equation is:</h3>
+        </div>
+
+        <!--Quadratic Calculator End -->
+
+        <!--Background Color Changer Start -->
+
+        <div id="background-color-changer" class="hide">
+          <h2>Background Colour Changer</h2>
+          <h3>Choose a Color.</h3>
+
+          <input id="background-color-select" type="color" />
+        </div>
+
+        <!--Background Color Changer End -->
+      </div>
+    </main>
+
+    <footer>&copy; ProDevS 2022</footer>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
