@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/Dprof-code/nft-preview-card-component-main]
-- Live Site URL: [https://silver-kitten-9b2673.netlify.app/]
+- Solution URL: [https://github.com/Dprof-code/javascript-beginner-projects]
+- Live Site URL: [https://snazzy-cobbler-5f2f4d.netlify.app/]
 
 ## My process
 
